@@ -34,4 +34,4 @@ jobs:
       - name: Create artifacts
         run: npm run compile
       - name: Push release to S3
-        run: npm run hardhat soko push -- --artifact-path ./artifacts --tag assured-counter:${{ github.ref_name }}
+        run: npm run hardhat soko push -- --artifact-path ./out --tag assured-counter:${{ github.ref_name }}

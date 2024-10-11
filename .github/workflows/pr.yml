@@ -65,7 +65,7 @@ jobs:
           script: |
             const { generateDiffWithTargetRelease, LocalStorageProvider } = require("hardhat-soko/scripts");
             const diff = await generateDiffWithTargetRelease(
-              "./artifacts",
+              "./out",
               { project: "assured-counter", tagOrId: "latest" },
                undefined,
                new LocalStorageProvider(".soko")
