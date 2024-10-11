@@ -1,0 +1,38 @@
+{
+  "address": "0x2c7a34BA50CD81C54F0cf40b1918E0C865aBE1E4",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getIncrement",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xb38941647c1ae1aac47c70f58d9f7189d0131704e0f653a620f8fa532f085d03",
+  "receipt": {
+    "to": null,
+    "from": "0x25371B936fD45e67F00dfEa1cd6A3e77105DD0FA",
+    "contractAddress": "0x2c7a34BA50CD81C54F0cf40b1918E0C865aBE1E4",
+    "transactionIndex": 74,
+    "gasUsed": "81734",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x77d6f5b26b84ad0ae89ac56627c1b90ddc5f77bfb8307607754b2ea4d527da43",
+    "transactionHash": "0xb38941647c1ae1aac47c70f58d9f7189d0131704e0f653a620f8fa532f085d03",
+    "logs": [],
+    "blockNumber": 6855396,
+    "cumulativeGasUsed": "6136124",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getIncrement\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/IncrementOracle.sol\":\"IncrementOracle\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"src/IncrementOracle.sol\":{\"keccak256\":\"0xfc08e8764f961edf3fd2a18924b30201fba40c82fecf0bc8c0cfea98ae75c4d8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9b421dee439483d0b50d38ff70abcd0f9206409a719a47bed876b1ba7a0be30f\",\"dweb:/ipfs/QmcGxm9KDAqGbst5E3eH23nQ1iLuBoEG21iyLaWHqmLzFo\"]}},\"version\":1}",
+  "bytecode": "0x6082610038600b82828239805160001a607314602b57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361060335760003560e01c80636ac4691f146038575b600080fd5b600260405190815260200160405180910390f3fea26469706673582212205daffa055672717b5739047b7f9b6984b75671737d9d13b904ad1eb71475734c64736f6c634300080d0033"
+}

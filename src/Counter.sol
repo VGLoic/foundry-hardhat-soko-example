@@ -1,14 +1,13 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
-contract Counter {
-    uint256 public number;
+import {IncrementOracle} from "./IncrementOracle.sol";
 
-    function setNumber(uint256 newNumber) public {
-        number = newNumber;
-    }
+contract Counter {
+    uint256 public counter;
 
     function increment() public {
-        number++;
+        uint256 incrementAmount = IncrementOracle.getIncrement();
+        counter += incrementAmount;
     }
 }
