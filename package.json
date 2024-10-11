@@ -1,7 +1,7 @@
 {
   "name": "foundry-hardhat-soko-example",
   "version": "1.0.0",
-  "description": "",
+  "description": "Integration example for Foundry and Soko with Hardhat",
   "author": "Loïc Vincent-Genod",
   "license": "MIT",
   "keywords": [
