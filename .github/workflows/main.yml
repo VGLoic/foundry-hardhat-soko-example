@@ -61,7 +61,7 @@ jobs:
           # Script to run logic logic before actually publishing
           # This is needed as Changesets won't trigger the tags workflow when a new version is published, so we need to do it manually
           # The steps of the script are:
-          # 1. Upload the compilation artifact to S3 with the new release tag,
+          # 1. Upload the compilation artifact with the new release tag,
           # 2. Download the releases,
           # 3. Build the artifacts for the NPM package,
           # 4. Publish the NPM package
