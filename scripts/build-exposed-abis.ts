@@ -13,11 +13,11 @@ const ABIS_TMP_FOLDER_JSON = path.join(ABIS_TMP_FOLDER, "json");
 const ABIS_OLD_FOLDER = path.join(__dirname, "../abis-old");
 
 /**
- * Based on the releases and generated delta artifacts folders,
+ * Based on the artifacts
  * this script will create a new `abis` folder with the following structure:
  * ```
  * abis/
- * ├── <release-name>/
+ * ├── <tag>/
  * │   ├── <contract-path>:<contract-name>.json
  * │   ├── <contract-path>:<contract-name>.js
  * │   ├── <contract-path>:<contract-name>.d.ts
@@ -49,7 +49,7 @@ const ABIS_OLD_FOLDER = path.join(__dirname, "../abis-old");
  * The `json` folder will contain a JSON file for each version of each contract and will be used to create the `.json` files in the `abis` folder by copy.
  * This folder will be removed at the end of the process.
  *
- * @dev The contract path is transformed to replace `/` with `-` to avoid issues with the file system.
+ * @dev The contract path is transformed to replace `/` with `_` to avoid issues with the file system.
  *
  * @dev Assumptions:
  * - The `releases` folder exists,
