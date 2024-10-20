@@ -27,7 +27,7 @@ The related code can be found in the `main.yml` workflow file
 - name: Create artifacts
   run: npm run compile
 - name: Push latest release to storage
-  run: npm run hardhat soko push -- --artifact-path ./out --tag assured-counter:latest --force
+  run: npm run hardhat soko push -- --artifact-path ./out --tag latest --force
 ```
 
 where `compile` is a `npm` script:
@@ -62,7 +62,7 @@ The matching code is
       - name: Create artifacts
         run: npm run compile
       - name: Pull latest release
-        run: npm run hardhat soko pull -- --artifact assured-counter:latest
+        run: npm run hardhat soko pull -- --tag latest
       - name: Create diff between artifacts and latest release
         id: artifacts-diff
         uses: actions/github-script@v7
@@ -136,10 +136,10 @@ RELEASE_TAG_WITHOUT_PREFIX=$(cat package.json | jq -r '.version')
 
 echo "Publishing release $RELEASE_TAG_WITHOUT_PREFIX"
 
-npm run hardhat soko push -- --artifact-path ./out --tag "assured-counter:v$RELEASE_TAG_WITHOUT_PREFIX" && echo "Successfully pushed release artifact" || echo "Failed to push release, we assume here that this is because the release already exists. Still room for improvement here."
+npm run hardhat soko push -- --artifact-path ./out --tag "v$RELEASE_TAG_WITHOUT_PREFIX" && echo "Successfully pushed release artifact" || echo "Failed to push release, we assume here that this is because the release already exists. Still room for improvement here."
 
 echo "Downloading release artifacts"
-npm run hardhat soko pull -- --artifact assured-counter
+npm run hardhat soko pull
 npm run hardhat soko typings
 
 echo "Release artifacts downloaded"
