@@ -13,6 +13,7 @@ if (
   process.env.AWS_SECRET_ACCESS_KEY
 ) {
   sokoConfig = {
+    project: "assured-counter",
     pulledArtifactsPath: ".soko",
     typingsPath: ".soko-typings",
     storageConfiguration: {
