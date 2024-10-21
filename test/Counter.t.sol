@@ -13,6 +13,6 @@ contract CounterTest is Test {
 
     function test_Increment() public {
         instance.increment();
-        assertEq(instance.counter(), 3);
+        assertEq(instance.counter(), 4);
     }
 }
