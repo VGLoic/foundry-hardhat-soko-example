@@ -3,6 +3,6 @@ pragma solidity 0.8.13;
 
 library IncrementOracle {
     function getIncrement() external pure returns (uint256) {
-        return 3;
+        return 4;
     }
 }
